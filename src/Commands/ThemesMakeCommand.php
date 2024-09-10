@@ -133,7 +133,7 @@ class ThemesMakeCommand extends Command
 
         $this->copyStubToApp('ThemeCss', $cssFilePath, [
             'panel' => $panelId,
-            'theme' => $theme,
+            'theme' => $name,
         ]);
         $this->copyStubToApp('ThemeTailwindConfig', $tailwindConfigFilePath, [
             'classPathPrefix' => $classPathPrefix,
